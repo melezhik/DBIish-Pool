@@ -1,6 +1,16 @@
 init:
 
+  variables:
+    PGDATABASE: dbdishtest
+    PGUSER: testuser
+    PGPASSWORD: testpass
+
   services:
+    postgresql:
+      db_name: $PGDATABASE
+      db_user: $PGUSER
+      db_pass: $PGPASSWORD
+
     mysql:
       db_name: dbdishtest
       db_user: testuser
