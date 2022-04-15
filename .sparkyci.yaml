@@ -1,0 +1,13 @@
+init:
+
+  services:
+    mysql:
+      db_name: dbdishtest
+      db_user: testuser
+      db_pass: testpass
+
+  packages:
+    mysql: {}
+
+main:
+  with-code-coverage: true
